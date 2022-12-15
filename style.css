@@ -1,0 +1,465 @@
+html{
+    height: 100%; 
+    background-image:  linear-gradient(45deg, #02ffc0 , #5fa2fa);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body{
+    background-image: url(images/image-lion-background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    color: white;
+    font-size: 1.125rem;
+}
+
+.container{
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+main{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.main2{
+    min-height: 300px;
+    padding-top: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.main2 p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    
+}
+
+.card1, .card2, .card3{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    box-shadow:4px 4px rgba(0, 0, 0, 0.322);
+}
+
+.card1{
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 30%;
+    min-height: 250px;
+}
+
+.card2{
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    min-height: 250px;
+    width: 30%;
+}
+
+.card3{
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    min-height: 250px;
+    width: 30%;
+}
+
+.herobox1{
+    flex: 2;
+    padding-right: 100px;
+}
+
+.herobox2{
+
+    flex: 1;
+
+}
+
+.herobox2 img{ 
+    width: 100%;
+}
+
+h1{
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.205);
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+p{
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.cards p{
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+   margin-top: 10px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cards i{
+ font-size: 100px !important;
+}
+
+.cards i:hover{
+    transform: rotate(-10deg);
+    transition-duration: 1s;
+ 
+}
+
+.cards a{
+    color: white;
+    text-decoration: none;
+}
+
+.mybutton{
+    background-color: white;
+    color: #5fa2fa;
+    text-decoration: none;
+    padding: 11px 25px;
+    box-shadow:4px 4px rgba(0, 0, 0, 0.151);
+    font-family: 'Lobster', cursive;
+}
+
+.submit{
+    background-color: white;
+    color: #5fa2fa;
+    text-decoration: none;
+    padding: 11px 25px;
+    box-shadow:4px 4px rgba(0, 0, 0, 0.151);
+    font-family: 'Lobster', cursive;
+    border: none;
+}
+
+a.mybutton{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.herobox1 h1{
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+  
+}
+
+.herobox1 p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbutton{
+    border: 2px  solid white;
+    text-decoration: none;
+    color: white;
+    padding: 11px 25px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    position: relative;
+}
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 60;
+
+}
+
+.tbox{
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.tbox p{
+    margin-top: 15px;
+}
+
+.mybutton:hover{
+    background-color: rgb(56, 49, 56);
+}
+
+.navbutton:hover{
+    background-color: rgba(211, 211, 211, 0.397);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
+    text-align: center;
+    margin-left: -127px;
+}
+
+
+
+.navbutton:hover .dropdown{
+    display: inline-block;
+
+}
+
+.dropdown .navbutton{
+    width: 100px;
+    background-color: white;
+}
+
+.dropdown .navbutton a{
+   color: #5fa2fa;
+   font-family: 'Lobster', cursive;
+}
+
+.dropdown .navbutton:hover{
+    background-color: rgb(49, 26, 51);
+}
+/* .mob-wrapper{
+    margin-bottom: 20px;
+} */
+
+
+.newlabel{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type=text], input[type=email], textarea{
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+}
+
+form{
+    margin: 40px 0px;
+}
+
+input.mybutton{
+    border: none;
+}
+
+input[type=text], input[type=email]{
+    font-family: 'Lobster', cursive;
+}
+
+.sign-title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
+.animated-nav{
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .main3{
+      display: none;
+      min-height: 300px;
+      padding-top: 50px;
+      font-family: 'Lobster', cursive;
+  }
+
+  .mymap{
+      display: none;
+  }
+
+
+
+/* tablet view */
+@media (max-width: 768px){
+   
+      body{
+          background-image: none;
+      }
+      
+    header{
+      padding: 0px 3%;
+    }
+   
+   .logo{
+       padding: 5px 0;
+   }
+
+   main{
+       padding: 0 3%;
+   }
+
+   .cards{
+       padding: 5px 3%;
+   }
+
+   .cards i:hover{
+    transform: none;
+   }
+
+   .testimonials{
+       padding: 0 3%;
+   }
+
+   .animated-nav{
+    display: inline-block;
+    padding-left: 3%;
+    width: 40px;
+
+}
+.mobile-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    width: 20%;
+    margin-left: -10%;
+}
+
+.navibutton {
+    display: block;
+    background-color: rgba(211, 211, 211, 0.397);;
+    padding: 15px 30px;
+    margin-left: -100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+
+
+  
+    .navbutton{
+        display: none;
+    } 
+
+    .animated-nav{
+        display: inline-block;
+
+    }
+
+  
+     
+    input[type=text], input[type=email], textarea{
+       
+        width: 95%;
+        margin-bottom: 30px;
+      
+      }
+
+    .main2 {
+        padding: 15px 3%;
+    }
+
+    .mybutton{
+        margin-top: 20px;
+    }
+
+
+    
+
+
+}
+
+/* mobile view */
+@media (max-width: 400px){
+    
+    body{
+        background-image: none;
+    }
+
+   .herobox2{
+       display: none;
+   }
+
+   .testimonials{
+       display: none;
+       
+   }
+
+   .tbox{
+       width: 100%;
+   }
+
+   .main3{
+       display: block;
+       padding: 15px 3%;
+       
+   }
+    
+   input[type=text], input[type=email], textarea{
+       
+    width: 100%;
+    margin-bottom: 40px;
+  
+  }
+
+.submit{
+    margin-top: 20px;
+}
+
+.mymap{
+    display: block;
+    padding: 20% 3%;
+}
+
+
+
+
+
+}
+
+/* smaller phone */
+@media (max-width: 307px){
+    
+         
+}

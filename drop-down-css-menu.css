@@ -1,0 +1,44 @@
+.navbutton{
+   background-color: chartreuse;
+   padding: 11px 25px;
+   width: 100px;
+   text-align: center;
+   display: inline-block;
+   position: relative;
+}
+
+
+/* for now drop down is turned off */
+.dropdownbox{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -30px;
+}
+
+/*using display box drop down box will be visible on hover*/
+.navbutton:hover .dropdownbox{
+    display: block;
+}
+.dropdownbox .navbutton{
+    background-color: cornflowerblue;
+    padding: 11px 25px;
+   width: 100px;
+   text-align: center;
+   display: inline-block;
+   position: relative;
+}
+
+.dropdownbox .navbutton:hover{
+    background-color: rgb(97, 116, 151);
+    transition-duration: 1s;
+}
+
+nav{
+    background-color: red;
+}
+
+.dropdownbox{
+    background-color: rgb(54, 32, 178);
+}
