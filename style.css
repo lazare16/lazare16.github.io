@@ -58,7 +58,8 @@ main{
 .card1, .card2, .card3{
     padding: 30px 30px 20px 30px;
     box-sizing: border-box;
-    box-shadow:4px 4px rgba(0, 0, 0, 0.322);
+    box-shadow:7px 7px rgba(0, 0, 0, 0.322);
+    border-radius: 5px;
 }
 
 .card1{
@@ -96,6 +97,7 @@ main{
 
 .herobox2 img{ 
     width: 100%;
+    border-radius: 5px;
 }
 
 h1{
@@ -141,8 +143,9 @@ p{
     color: #5fa2fa;
     text-decoration: none;
     padding: 11px 25px;
-    box-shadow:4px 4px rgba(0, 0, 0, 0.151);
+    box-shadow:6px 6px rgba(0, 0, 0, 0.151);
     font-family: 'Lobster', cursive;
+    border-radius: 5px;
 }
 
 .submit{
@@ -172,6 +175,7 @@ a.mybutton{
 
 .navbutton{
     border: 2px  solid white;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
     padding: 11px 25px;
@@ -197,6 +201,7 @@ a.mybutton{
     border: 1px solid white;
     box-sizing: border-box;
     margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .tbox p{
@@ -320,7 +325,10 @@ input[type=text], input[type=email]{
 
 
 /* tablet view */
-@media (max-width: 768px){
+@media (max-width: 1024px){
+    .container{
+        width: auto;
+    }
    
       body{
           background-image: none;
@@ -337,17 +345,49 @@ input[type=text], input[type=email]{
    main{
        padding: 0 3%;
    }
+   .herobox1{
+    text-align: center;
+    padding: 5px;
+   }
+   .herobox1 a{
+    margin-bottom: 7px;
+   }
+   
+
+   .herobox2{
+    display: none;
+   }
 
    .cards{
        padding: 5px 3%;
+       /* background-color: black; */
+   }
+   .cards i{
+    font-size: 40px !important;
+   }
+
+   .cards h2{
+    font-size: 20px;
    }
 
    .cards i:hover{
     transform: none;
    }
 
+   .card1, .card2, .card3{
+    min-height: 150px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.322);
+
+   }
+
    .testimonials{
-       padding: 0 3%;
+       display: none;
+   }
+
+   .mymap{
+    display: block;
+    padding: 5% 3%;
+    height: auto;
    }
 
    .animated-nav{
@@ -411,14 +451,16 @@ input[type=text], input[type=email]{
 }
 
 /* mobile view */
-@media (max-width: 400px){
+/* @media (min-width: 400px){
+   body{
+    background-color: black;
+   }
     
-    body{
-        background-image: none;
-    }
+   
 
    .herobox2{
        display: none;
+       background-color: black;
    }
 
    .testimonials{
@@ -451,15 +493,10 @@ input[type=text], input[type=email]{
     display: block;
     padding: 20% 3%;
 }
-
-
-
-
-
 }
 
 /* smaller phone */
-@media (max-width: 307px){
+/* @media (max-width: 307px){
     
          
-}
+}  */
