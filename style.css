@@ -397,16 +397,49 @@ input[type=text], input[type=email]{
 
 }
 .mobile-nav {
-    display: none;
+    /* display: none;
     position: absolute;
     padding-top: 10px;
     width: 20%;
-    margin-left: -10%;
+    margin-left: -10%; */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #35cce0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
+
+.mobile-nav a{
+    padding: 8px 8px 8px 100px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    background-color: none;
+}
+
+
+.mobile-nav .animated-nav{
+    position: absolute;
+    top: 0;
+    right: 200px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .mobile-nav {padding-top: 15px;}
+    .mobile-nav a {font-size: 18px;}
+  }
 
 .navibutton {
     display: block;
-    background-color: rgba(211, 211, 211, 0.397);;
     padding: 15px 30px;
     margin-left: -100px;
     text-align: center;
